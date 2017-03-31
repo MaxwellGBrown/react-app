@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MaxwellGBrown/react-app#readme",
   "dependencies": {
+    "serve": "^5.1.2",
     "webpack": "^2.3.2"
   }
 }
