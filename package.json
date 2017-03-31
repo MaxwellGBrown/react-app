@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MaxwellGBrown/react-app/issues"
   },
-  "homepage": "https://github.com/MaxwellGBrown/react-app#readme"
+  "homepage": "https://github.com/MaxwellGBrown/react-app#readme",
+  "dependencies": {
+    "webpack": "^2.3.2"
+  }
 }
