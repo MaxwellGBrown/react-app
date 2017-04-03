@@ -7,4 +7,4 @@ WORKDIR /react-app
 RUN npm install
 
 SHELL ["/bin/bash"]
-CMD ["node_modules/.bin/serve", "--port", "80"]
+CMD ["npm", "run", "serve", "--", "--port", "80"]

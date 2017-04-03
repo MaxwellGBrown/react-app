@@ -17,7 +17,7 @@ Development
 
    ::
 
-     $ node_modules/.bin/webpack ./app ./dist/bundle.js
+     $ npm run webpack
 
 #. Run the docker image to serve ``index.html``
 
