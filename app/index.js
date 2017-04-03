@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-
-function component (name) {
-  return (<h1>Hello {name}</h1>);
-}
+import App from "./app.jsx";
 
 
-ReactDOM.render(component("World"), document.getElementById("root"));
+ReactDOM.render(<App/>, document.getElementById("root"));
