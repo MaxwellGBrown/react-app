@@ -13,6 +13,12 @@ Development
 
      $ docker build -t react-app .
 
+#. Bundle the JavaScript app
+
+   ::
+
+     $ node_modules/.bin/webpack ./app ./dist/bundle.js
+
 #. Run the docker image to serve ``index.html``
 
    ::
