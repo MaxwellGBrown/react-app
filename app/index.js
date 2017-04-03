@@ -1,7 +1,10 @@
-function component () {
-  var element = document.createElement('h1');
-  element.innerHTML = 'Hello world';
-  return element;
+import React from "react";
+import ReactDOM from "react-dom";
+
+
+function component (name) {
+  return (<h1>Hello {name}</h1>);
 }
 
-document.body.appendChild(component())
+
+ReactDOM.render(component("World"), document.getElementById("root"));
