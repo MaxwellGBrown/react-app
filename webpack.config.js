@@ -13,7 +13,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           query: {
-            presets: ["es2016", "react"]
+            presets: ["es2016", "react", "stage-0"]
           }
         },
         exclude: /node_modules/,
