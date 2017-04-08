@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import stylesheet from "../styles/main.scss";
 
 export default class App extends Component {
 
@@ -12,8 +13,9 @@ export default class App extends Component {
   }
 
   render () {
+    console.log(stylesheet);
     return (
-      <div>
+      <div className={stylesheet.helloWorld}>
         <h1>Hello {this.state.name}</h1>
         <form onSubmit={::this.onSubmit}>
           <input type="text" ref={input => { this.nameInput = input; }}/>

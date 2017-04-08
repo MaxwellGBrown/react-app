@@ -17,6 +17,27 @@ module.exports = {
           }
         },
         exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: "style-loader" },  // create style nodes from JS strings
+          {
+            loader: "css-loader",  // translates CSS into CommonJS
+            options: {
+              localIdentName: "[local]",
+              modules: true,
+              sourceMap: true
+            }
+          },
+          {
+            loader: "sass-loader",  // Compile Sass to CSS
+            options: {
+              includePaths: ["app/styles"],
+              sourceMap: true
+            }
+          }
+        ]
       }
     ] 
   }
